@@ -1,0 +1,88 @@
+.footer{
+    margin-bottom: 36px;
+    &__line{
+        border:2px solid $primary-color;;
+        margin-bottom: 37px;
+        width: 100%;
+    }
+    &__container{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo{
+        font-size: 16px;
+        line-height: calc(19 / 16);
+        color: $primary-color;
+        text-transform: uppercase;
+        
+    }
+    &__title{
+        font-size: 14px;
+        line-height: calc( 16 / 14);
+        color: $heading-color;
+        margin-bottom: 18px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        gap:5px 0;
+        text-decoration: none;
+        list-style-type: none;
+    }
+    &__link{
+        font-size: 14px;
+        line-height: calc(26 / 14);
+        color:$footer-color;
+    }
+    &__design-title{
+        font: 10px;
+        line-height: calc(12 / 10);
+        color: #CCCCCC;
+        margin-bottom: 7px;
+        margin-right: 8px;
+    }  
+}
+
+@media only screen and (max-width: 661px) {
+    .footer{
+        &__line{
+            margin-bottom: 20px;
+        }
+        &__container{
+            display: block;
+        }
+        &__logo{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto 13px;   
+        }
+        &__company{
+            display: block;
+            margin-bottom: 6px;
+        }
+        &__title{
+            text-align: center;
+            margin-bottom: 1px;
+        }
+        &__item{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px 14px;
+            text-decoration: none;
+            list-style-type: none;
+            width: 100%;   
+        }
+        &__design{
+           margin-top: 14px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 7px 0;
+            align-items: center;
+            margin-bottom: 22px;
+        } 
+    }
+}

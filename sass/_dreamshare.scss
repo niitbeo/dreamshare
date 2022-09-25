@@ -1,0 +1,74 @@
+.dreamshare{
+    margin-bottom: 95px;
+    &__heading{
+        font-size: 22px;
+        line-height: calc(26 / 22);
+        color: $heading-color;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    &__container{
+        display: flex;
+        justify-content: center;
+        gap: 0 20px;
+    }
+    &__main{
+        position: relative;  
+    }
+    &__img{ 
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.6) 100%);
+        mix-blend-mode: normal;
+        border-radius: 4px;
+        }  
+    &__content{
+        position: absolute;
+        bottom:0;
+        bottom: 0;
+        padding: 0 25px 21px 25px;
+        margin-bottom: auto;
+    }
+    &__title{
+        display: flex;
+        color: $white-color;
+        font-size: 24px;
+        line-height: calc(14 / 24);
+        margin-bottom: 10px;
+        max-width: 250px;
+        margin-top: 35px;  
+        align-items: flex-end;
+    }   
+    &__desc{
+        display: flex;
+        font-size: 14px;
+        line-height: calc(14 / 14);
+        color: $gray-color;
+        max-width: 250px;
+        margin-top: 10px;
+        margin-top: 30px;
+        align-items: baseline;
+    }
+}
+// @media only screen and (max-width: 769px) {
+//     .dreamshare{
+        
+//         &__container{
+//             flex-direction: column;
+//            flex-wrap: wrap;
+//            gap: 10px 0;
+//         }
+        
+//     }
+
+// }
+@media only screen and (max-width: 601px) {
+    .dreamshare{
+        margin-bottom: 36px;
+        &__container{
+           flex-wrap: wrap;
+           gap: 10px 0;
+        }
+        &__heading{
+            margin-bottom: 15px;
+        }
+    }
+}
